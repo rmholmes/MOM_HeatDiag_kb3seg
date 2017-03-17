@@ -2,8 +2,8 @@
 queue: express
 project: e14
 walltime: 0:30:00
-ncpus: 16
-mem: 32GB
+ncpus: 1920
+mem: 3840GB
 jobname: NYF
 
 #collate_walltime: 10:00:00
