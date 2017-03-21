@@ -6,6 +6,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ice_month",        1,  "months", 1, "days", "time",
 "ocean",            1,  "months", 1, "days", "time",
 "ocean_heat",       1,  "months", 1, "days", "time",
+"ocean_snap",       1,  "months", 1, "days", "time",
 "ocean_daily",     24,  "hours",  1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
@@ -48,6 +49,19 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 # Daily data ------------------------------
 
 #==========================================================================
+# End of month snapshots:
+#=============================================================================== 
+"ocean_model","geolon_t","geolon_t", "ocean_snap","all",.false.,"none",2
+"ocean_model","geolat_t","geolat_t", "ocean_snap","all",.false.,"none",2
+"ocean_model","geolon_c","geolon_c", "ocean_snap","all",.false.,"none",2
+"ocean_model","geolat_c","geolat_c", "ocean_snap","all",.false.,"none",2
+
+#Snapshots:
+"ocean_model","temp","temp", "ocean_snap","all",.false.,"none",2
+"ocean_model","salt","salt",  ocean_snap","all",.false.,"none",2
+"ocean_model","sea_level","sea_level", "ocean_snap","all",.false.,"none",2
+
+#==========================================================================
 # HEAT BUDGET DIAGNOSTICS:
 #=============================================================================== 
 "ocean_model","geolon_t","geolon_t", "ocean_heat","all",.false.,"none",2
@@ -76,21 +90,24 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","temp_eta_smooth","temp_eta_smooth","ocean_heat","all",.true.,"none",2
 "ocean_model","sw_heat","sw_heat", "ocean_heat","all",.true.,"none",2
 
+#Rivers/Calving:
+"ocean_model","temp_rivermix","temp_rivermix","ocean_heat","all",.true.,"none",2
+
 # Are the following parameterizations on??? I don't think so ---------------------------------
 # Neutral diffusion:
-"ocean_model","neutral_diffusion_temp","neutral_diffusion_temp","ocean_heat","all",.true.,"none",2
-"ocean_model","temp_vdiffuse_k33","temp_vdiffuse_k33","ocean_heat","all",.true.,"none",2
+#"ocean_model","neutral_diffusion_temp","neutral_diffusion_temp","ocean_heat","all",.true.,"none",2
+#"ocean_model","temp_vdiffuse_k33","temp_vdiffuse_k33","ocean_heat","all",.true.,"none",2
 
 # Overflow parameterizations:
-"ocean_model","mixdownslope_temp","mixdownslope_temp","ocean_heat","all",.true.,"none",2
-"ocean_model","temp_sigma_diff","temp_sigma_diff","ocean_heat","all",.true.,"none",2
+#"ocean_model","mixdownslope_temp","mixdownslope_temp","ocean_heat","all",.true.,"none",2
+#"ocean_model","temp_sigma_diff","temp_sigma_diff","ocean_heat","all",.true.,"none",2
 
 # Geothermal:
-"ocean_model","geo_heat","geo_heat","ocean_heat","all",.true.,"none",2
+#"ocean_model","geo_heat","geo_heat","ocean_heat","all",.true.,"none",2
 
 # Land-model inputs:
-"ocean_model","temp_runoffmix","temp_runoffmix","ocean_heat","all",.true.,"none",2
-"ocean_model","temp_calvingmix","temp_calvingmix","ocean_heat","all",.true.,"none",2
+#"ocean_model","temp_runoffmix","temp_runoffmix","ocean_heat","all",.true.,"none",2
+#"ocean_model","temp_calvingmix","temp_calvingmix","ocean_heat","all",.true.,"none",2
 
 #
 #==========================================================================
