@@ -42,6 +42,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","net_sfc_heating","net_sfc_heating"     ,"ocean","all",.true.,"none",2
 "ocean_model","tau_x","tau_x"                         ,"ocean","all",.true.,"none",2
 "ocean_model","tau_y","tau_y"                         ,"ocean","all",.true.,"none",2
+"ocean_model","dzt","dzt",            "ocean","all",.true.,"none",2
 "ocean_model","tx_trans","tx_trans",        "ocean","all",.true.,"none",2
 "ocean_model","ty_trans","ty_trans",        "ocean","all",.true.,"none",2 
 #"ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
@@ -58,7 +59,8 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 
 #Snapshots:
 "ocean_model","temp","temp", "ocean_snap","all",.false.,"none",2
-"ocean_model","salt","salt",  ocean_snap","all",.false.,"none",2
+"ocean_model","salt","salt", "ocean_snap","all",.false.,"none",2
+"ocean_model","dzt","dzt",   "ocean_snap","all",.false.,"none",2
 "ocean_model","sea_level","sea_level", "ocean_snap","all",.false.,"none",2
 
 #==========================================================================
@@ -68,6 +70,9 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","geolat_t","geolat_t", "ocean_heat","all",.false.,"none",2
 "ocean_model","geolon_c","geolon_c", "ocean_heat","all",.false.,"none",2
 "ocean_model","geolat_c","geolat_c", "ocean_heat","all",.false.,"none",2
+
+#Normalization:
+"ocean_model","rho_dzt","rho_dzt", "ocean_heat","all",.true.,"none",2
 
 #Tendencies/advection:
 "ocean_model","temp_tendency","temp_tendency", "ocean_heat","all",.true.,"none",2
