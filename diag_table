@@ -4,9 +4,9 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #"ice_%4yr_%3dy",    3,  "hours", 1, "days", "time",5, "days"
 "ice_daily",       24,  "hours",  1, "days", "time",
 "ice_month",        1,  "months", 1, "days", "time",
-"ocean",            1,  "months", 1, "days", "time",
-"ocean_heat",       1,  "months", 1, "days", "time",
-"ocean_snap",       1,  "months", 1, "days", "time",
+"ocean",           24,  "hours", 1, "days", "time",
+"ocean_heat",      24,  "hours", 1, "days", "time",
+"ocean_snap",      24,  "hours", 1, "days", "time",
 "ocean_daily",     24,  "hours",  1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
@@ -72,7 +72,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","geolat_c","geolat_c", "ocean_heat","all",.false.,"none",2
 
 #Normalization:
-"ocean_model","rho_dzt","rho_dzt", "ocean_heat","all",.true.,"none",2
+#"ocean_model","rho_dzt","rho_dzt", "ocean_heat","all",.true.,"none",2
 
 #Tendencies/advection:
 "ocean_model","temp_tendency","temp_tendency", "ocean_heat","all",.true.,"none",2
