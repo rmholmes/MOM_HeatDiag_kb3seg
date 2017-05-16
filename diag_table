@@ -110,6 +110,20 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","geolon_c","geolon_c", "ocean_wmass","all",.false.,"none",2
 "ocean_model","geolat_c","geolat_c", "ocean_wmass","all",.false.,"none",2
 
+#New temperature binned diagnostics:
+"ocean_model","temp_tendency_on_nrho","temp_tendency_on_nrho", "ocean_wmass","all",.true.,"none",2
+"ocean_model","temp_advection_on_nrho","temp_advection_on_nrho", "ocean_wmass","all",.true.,"none",2
+"ocean_model","temp_submeso_on_nrho","temp_submeso_on_nrho", "ocean_wmass","all",.true.,"none",2
+"ocean_model","temp_vdiffuse_diff_cbt_on_nrho","temp_vdiffuse_diff_cbt_on_nrho", "ocean_wmass","all",.true.,"none",2
+"ocean_model","temp_nonlocal_KPP_on_nrho","temp_nonlocal_KPP_on_nrho", "ocean_wmass","all",.true.,"none",2
+"ocean_model","temp_vdiffuse_sbc_on_nrho","temp_vdiffuse_sbc_on_nrho","ocean_wmass","all",.true.,"none",2
+"ocean_model","sfc_hflux_pme_on_nrho","sfc_hflux_pme_on_nrho","ocean_wmass","all",.true.,"none",2
+"ocean_model","frazil_2d_on_nrho","frazil_2d_on_nrho","ocean_wmass","all",.true.,"none",2
+"ocean_model","temp_eta_smooth_on_nrho","temp_eta_smooth_on_nrho","ocean_wmass","all",.true.,"none",2
+"ocean_model","sw_heat_on_nrho","sw_heat_on_nrho", "ocean_wmass","all",.true.,"none",2
+"ocean_model","temp_rivermix_on_nrho","temp_rivermix_on_nrho","ocean_wmass","all",.true.,"none",2
+
+
 #Potential/Neutral density budget on a grid cell:
 # "ocean_model","neut_rho_tendency","neut_rho_tendency", "ocean_wmass","all",.true.,"none",2
 # "ocean_model","neut_temp_tendency","neut_temp_tendency", "ocean_wmass","all",.true.,"none",2
@@ -146,60 +160,60 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 # "ocean_model","neut_rho_frazil","neut_rho_frazil", "ocean_wmass","all",.true.,"none",2
 # "ocean_model","neut_rho_smooth","neut_rho_smooth", "ocean_wmass","all",.true.,"none",2
 
-#Potential/Neutral density budget binned:
-"ocean_model","neut_rho_tendency_on_nrho","neut_rho_tendency_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_temp_tendency_on_nrho","neut_temp_tendency_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_salt_tendency_on_nrho","neut_salt_tendency_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_advect_on_nrho","neut_rho_advect_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_temp_advect_on_nrho","neut_temp_advect_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_submeso_on_nrho","neut_rho_submeso_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_temp_submeso_on_nrho","neut_temp_submeso_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_pme_on_nrho","neut_rho_pme_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_temp_pme_on_nrho","neut_temp_pme_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_rivermix_on_nrho","neut_rho_rivermix_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_temp_rivermix_on_nrho","neut_temp_rivermix_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_sbc_temp_on_nrho","neut_rho_sbc_temp_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_sbc_salt_on_nrho","neut_rho_sbc_salt_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_sbc_on_nrho","neut_rho_sbc_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_sw_on_nrho","neut_rho_sw_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_pbl_pme_pr_on_nrho","neut_rho_pbl_pme_pr_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_temp_pbl_pme_pr_on_nrho","neut_temp_pbl_pme_pr_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_pbl_rv_pr_on_nrho","neut_rho_pbl_rv_pr_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_temp_pbl_rv_pr_on_nrho","neut_temp_pbl_rv_pr_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_vdiffuse_on_nrho","neut_rho_vdiffuse_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_diff_cbt_on_nrho","neut_rho_diff_cbt_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_temp_diff_cbt_on_nrho","neut_temp_diff_cbt_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_diff_back_on_nrho","neut_rho_diff_back_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_diff_wave_on_nrho","neut_rho_diff_wave_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_diff_lee_on_nrho","neut_rho_diff_lee_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_diff_drag_on_nrho","neut_rho_diff_drag_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_diff_k33_on_nrho","neut_rho_diff_k33_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_convect_on_nrho","neut_rho_convect_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_kpp_nloc_on_nrho","neut_rho_kpp_nloc_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_temp_kpp_nloc_on_nrho","neut_temp_kpp_nloc_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_cabbeling_on_nrho","neut_rho_cabbeling_on_nrho", "ocean_wmass","all",.true.,"none",2
-#"ocean_model","neut_rho_thermob_on_nrho","neut_rho_thermob_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_frazil_on_nrho","neut_rho_frazil_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","neut_rho_smooth_on_nrho","neut_rho_smooth_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #Potential/Neutral density budget binned:
+# "ocean_model","neut_rho_tendency_on_nrho","neut_rho_tendency_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_temp_tendency_on_nrho","neut_temp_tendency_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_salt_tendency_on_nrho","neut_salt_tendency_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_advect_on_nrho","neut_rho_advect_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_temp_advect_on_nrho","neut_temp_advect_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_submeso_on_nrho","neut_rho_submeso_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_temp_submeso_on_nrho","neut_temp_submeso_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_pme_on_nrho","neut_rho_pme_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_temp_pme_on_nrho","neut_temp_pme_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_rivermix_on_nrho","neut_rho_rivermix_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_temp_rivermix_on_nrho","neut_temp_rivermix_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_sbc_temp_on_nrho","neut_rho_sbc_temp_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_sbc_salt_on_nrho","neut_rho_sbc_salt_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_sbc_on_nrho","neut_rho_sbc_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_sw_on_nrho","neut_rho_sw_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_pbl_pme_pr_on_nrho","neut_rho_pbl_pme_pr_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_temp_pbl_pme_pr_on_nrho","neut_temp_pbl_pme_pr_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_pbl_rv_pr_on_nrho","neut_rho_pbl_rv_pr_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_temp_pbl_rv_pr_on_nrho","neut_temp_pbl_rv_pr_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_vdiffuse_on_nrho","neut_rho_vdiffuse_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_diff_cbt_on_nrho","neut_rho_diff_cbt_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_temp_diff_cbt_on_nrho","neut_temp_diff_cbt_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_diff_back_on_nrho","neut_rho_diff_back_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_diff_wave_on_nrho","neut_rho_diff_wave_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_diff_lee_on_nrho","neut_rho_diff_lee_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_diff_drag_on_nrho","neut_rho_diff_drag_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_diff_k33_on_nrho","neut_rho_diff_k33_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_convect_on_nrho","neut_rho_convect_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_kpp_nloc_on_nrho","neut_rho_kpp_nloc_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_temp_kpp_nloc_on_nrho","neut_temp_kpp_nloc_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_cabbeling_on_nrho","neut_rho_cabbeling_on_nrho", "ocean_wmass","all",.true.,"none",2
+# #"ocean_model","neut_rho_thermob_on_nrho","neut_rho_thermob_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_frazil_on_nrho","neut_rho_frazil_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","neut_rho_smooth_on_nrho","neut_rho_smooth_on_nrho", "ocean_wmass","all",.true.,"none",2
 
-# Layer mass budget:
-"ocean_model","mass_nrho_layer","mass_nrho_layer", "ocean_wmass","all",.true.,"none",2
-"ocean_model","mass_nrho_tendency_layer","mass_nrho_tendency_layer", "ocean_wmass","all",.true.,"none",2
+# # Layer mass budget:
+# "ocean_model","mass_nrho_layer","mass_nrho_layer", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","mass_nrho_tendency_layer","mass_nrho_tendency_layer", "ocean_wmass","all",.true.,"none",2
 
-"ocean_model","mass_t","mass_t", "ocean_wmass","all",.true.,"none",2
-"ocean_model","mass_t_on_nrho","mass_t_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","mass_t_tendency_on_nrho","mass_t_tendency_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","mass_t","mass_t", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","mass_t_on_nrho","mass_t_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","mass_t_tendency_on_nrho","mass_t_tendency_on_nrho", "ocean_wmass","all",.true.,"none",2
 
-"ocean_model","mass_pmepr_on_nrho","mass_pmepr_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","mass_precip_on_nrho","mass_precip_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","mass_evap_on_nrho","mass_evap_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","mass_river_on_nrho","mass_river_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","mass_melt_on_nrho","mass_melt_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","mass_pmepr_on_nrho","mass_pmepr_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","mass_precip_on_nrho","mass_precip_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","mass_evap_on_nrho","mass_evap_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","mass_river_on_nrho","mass_river_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","mass_melt_on_nrho","mass_melt_on_nrho", "ocean_wmass","all",.true.,"none",2
 
-"ocean_model","tx_trans_nrho","tx_trans_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","tx_trans_nrho_submeso","tx_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",2
-"ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","tx_trans_nrho","tx_trans_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","tx_trans_nrho_submeso","tx_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",2
 
 #
 #==========================================================================
