@@ -118,7 +118,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","temp_nonlocal_KPP_on_nrho","temp_nonlocal_KPP_on_nrho", "ocean_wmass","all",.true.,"none",2
 "ocean_model","temp_vdiffuse_sbc_on_nrho","temp_vdiffuse_sbc_on_nrho","ocean_wmass","all",.true.,"none",2
 "ocean_model","sfc_hflux_pme_on_nrho","sfc_hflux_pme_on_nrho","ocean_wmass","all",.true.,"none",2
-"ocean_model","frazil_2d_on_nrho","frazil_2d_on_nrho","ocean_wmass","all",.true.,"none",2
+"ocean_model","frazil_on_nrho","frazil_on_nrho","ocean_wmass","all",.true.,"none",2
 "ocean_model","temp_eta_smooth_on_nrho","temp_eta_smooth_on_nrho","ocean_wmass","all",.true.,"none",2
 "ocean_model","sw_heat_on_nrho","sw_heat_on_nrho", "ocean_wmass","all",.true.,"none",2
 "ocean_model","temp_rivermix_on_nrho","temp_rivermix_on_nrho","ocean_wmass","all",.true.,"none",2
