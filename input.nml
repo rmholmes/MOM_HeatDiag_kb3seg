@@ -1,6 +1,6 @@
  &coupler_nml
-        months = 1,
-        days   = 0,
+        months = 0,
+        days   = 365,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
         dt_cpld = 1800,
@@ -194,9 +194,9 @@
         neutral_rho_equal_theta=.true.
 	potrho_min=-5.0
 	potrho_max=35.0
-	neutralrho_min=-5.0
-	neutralrho_max=35.0
-	layer_nk=80
+	neutralrho_min=-3.0
+	neutralrho_max=34.0
+	layer_nk=74
 	eos_linear=.false.
 	eos_preteos10=.true.
 /
