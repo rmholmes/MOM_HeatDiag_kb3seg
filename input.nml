@@ -1,6 +1,7 @@
  &coupler_nml
         months = 0,
-        days   = 6.25e-2,
+        days   = 0,
+        seconds = 5400,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
         dt_cpld = 1800,
