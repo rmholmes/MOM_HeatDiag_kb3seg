@@ -1,7 +1,7 @@
 # PBS flags
 queue: express
 project: e14
-walltime: 00:30:00
+walltime: 05:00:00
 ncpus: 1920
 mem: 3840GB
 jobname: momNYFheat
