@@ -1,7 +1,7 @@
 # PBS flags
-queue: express
+queue: normal
 project: e14
-walltime: 05:00:00
+walltime: 03:00:00
 ncpus: 1920
 mem: 3840GB
 jobname: momNYFheat
@@ -9,8 +9,8 @@ jobname: momNYFheat
 #collate_walltime: 10:00:00
 #collate_mem: 16GB
 collate_walltime: 24:00:00
-collate_mem: 128GB
-collate_ncpus: 16
+collate_mem: 64GB
+collate_ncpus: 8
 collate_queue: express
 collate_flags: -n4 -z -m -r
 collate_exe: /short/v45/aph502/mom/bin/mppnccombine
