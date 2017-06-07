@@ -9,8 +9,8 @@ jobname: momNYFheat
 #collate_walltime: 10:00:00
 #collate_mem: 16GB
 collate_walltime: 24:00:00
-collate_mem: 64GB
-collate_ncpus: 8
+collate_mem: 24GB
+collate_ncpus: 6
 collate_queue: express
 collate_flags: -n4 -z -m -r
 collate_exe: /short/v45/aph502/mom/bin/mppnccombine
