@@ -8,9 +8,9 @@ jobname: momNYFheat
 
 #collate_walltime: 10:00:00
 #collate_mem: 16GB
-collate_walltime: 24:00:00
-collate_mem: 24GB
-collate_ncpus: 6
+collate_walltime: 12:00:00
+collate_mem: 12GB
+collate_ncpus: 2
 collate_queue: express
 collate_flags: -n4 -z -m -r
 collate_exe: /short/v45/aph502/mom/bin/mppnccombine
@@ -22,7 +22,7 @@ shortpath: /short/e14
 #exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2.ompi1.10.2
 input:
      - /short/v45/pas561/mom/input/gfdl_nyf_1080
-collate: true
+collate: false
 
 # Misc
 stacksize: unlimited
