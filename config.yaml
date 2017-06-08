@@ -26,5 +26,5 @@ collate: false
 
 # Misc
 stacksize: unlimited
-
+mpirun: --mca mtl mxm
 qsub_flags: -lother=hyperthread
