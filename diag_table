@@ -1,7 +1,7 @@
 MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 1 1 1 0 0 0
 #output files
-"ice_daily",       24,  "hours",  1, "days", "time",
+#"ice_daily",       24,  "hours",  1, "days", "time",
 "ice_month",        1,  "months", 1, "days", "time",
 "ocean",           1,  "months", 1, "days", "time",
 "ocean_heat",      1,  "months", 1, "days", "time",
@@ -158,12 +158,12 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 # "ice_model", "SSH",        "SSH",        "ice_%4yr_%3dy", "all", .true., "none", 2#
 #
 # Daily data ----------------------------------
-"ice_model", "CELL_AREA",  "CELL_AREA",  "ice_daily", "all", .false., "none", 2
-"ice_model", "GEOLAT",     "GEOLAT",     "ice_daily", "all", .false., "none", 2
-"ice_model", "GEOLON",     "GEOLON",     "ice_daily", "all", .false., "none", 2
-"ice_model", "SSH",        "SSH",        "ice_daily", "all", .true., "none", 2
-"ice_model", "SSS",        "SSS",        "ice_daily", "all", .true., "none", 2
-"ice_model", "SST",        "SST",        "ice_daily", "all", .true., "none", 2
+# "ice_model", "CELL_AREA",  "CELL_AREA",  "ice_daily", "all", .false., "none", 2
+# "ice_model", "GEOLAT",     "GEOLAT",     "ice_daily", "all", .false., "none", 2
+# "ice_model", "GEOLON",     "GEOLON",     "ice_daily", "all", .false., "none", 2
+# "ice_model", "SSH",        "SSH",        "ice_daily", "all", .true., "none", 2
+# "ice_model", "SSS",        "SSS",        "ice_daily", "all", .true., "none", 2
+# "ice_model", "SST",        "SST",        "ice_daily", "all", .true., "none", 2
 # Monthly data --------------------------------
 #
 "ice_model", "CELL_AREA",  "CELL_AREA",  "ice_month", "all", .false., "none", 2
