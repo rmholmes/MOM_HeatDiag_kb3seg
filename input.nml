@@ -197,7 +197,7 @@
 	potrho_max=34.0
 	neutralrho_min=-3.0
 	neutralrho_max=34.0
-	layer_nk=74
+	layer_nk=37
 	eos_linear=.false.
 	eos_preteos10=.true.
 /

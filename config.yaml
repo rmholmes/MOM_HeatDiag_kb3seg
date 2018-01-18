@@ -19,7 +19,6 @@ collate_exe: /short/v45/aph502/mom/bin/mppnccombine
 model: mom
 shortpath: /short/e14
 input:
-     - /g/data/e14/rmh561/MOM_HeatDiag/restart007
      - mom025/mask_1920
      - gfdl_nyf_1080_clean
 collate: true
