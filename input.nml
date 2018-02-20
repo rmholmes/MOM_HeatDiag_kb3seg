@@ -197,7 +197,7 @@
 	potrho_max=34.0
 	neutralrho_min=-3.0
 	neutralrho_max=34.0
-	layer_nk=37
+	layer_nk=74
 	eos_linear=.false.
 	eos_preteos10=.true.
 /
@@ -612,7 +612,7 @@
 
  &ocean_vert_kpp_mom4p1_nml
 	use_this_module=.true.
-	diff_cbt_iw=0.0
+	diff_cbt_iw=1.0e-5
 	visc_cbu_iw=0.0
 	double_diffusion=.true.
 	Ricr=0.3
