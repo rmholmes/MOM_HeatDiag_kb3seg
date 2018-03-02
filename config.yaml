@@ -4,7 +4,7 @@ project: e14
 walltime: 03:00:00
 ncpus: 1477
 mem: 2900GB
-jobname: momNYFheat
+jobname: NYFh1em5
 
 #collate_walltime: 10:00:00
 #collate_mem: 16GB

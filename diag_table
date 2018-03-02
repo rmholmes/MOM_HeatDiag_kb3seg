@@ -31,29 +31,35 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","geolat_t","geolat_t", "ocean","all",.false.,"none",2
 "ocean_model","geolon_c","geolon_c", "ocean","all",.false.,"none",2
 "ocean_model","geolat_c","geolat_c", "ocean","all",.false.,"none",2
+"ocean_model","temp","temp",            "ocean","all",.true.,"none",2
 "ocean_model","salt","salt",            "ocean","all",.true.,"none",2
-"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
 "ocean_model","u","u",                  "ocean","all",.true.,"none",2
 "ocean_model","v","v",                  "ocean","all",.true.,"none",2
-"ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
 "ocean_model","wt","wt",                            "ocean","all",.true.,"none",2
+"ocean_model","diff_cbt_t","diff_cbt_t",          "ocean","all",.true.,"none",2
+"ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
+
+"ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
+"ocean_model","sea_level_sq","sea_levelsq",      "ocean","all",.true.,"none",2
 "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 "ocean_model","tau_x","tau_x"                         ,"ocean","all",.true.,"none",2
 "ocean_model","tau_y","tau_y"                         ,"ocean","all",.true.,"none",2
-"ocean_model","tx_trans","tx_trans",        "ocean","all",.true.,"none",2
-"ocean_model","ty_trans","ty_trans",        "ocean","all",.true.,"none",2 
+"ocean_model","pme_river","pme_river",            "ocean","all",.true.,"none",2
+"ocean_model","net_sfc_heating","net_sfc_heating"     ,"ocean","all",.true.,"none",2
+"ocean_model","swflx","swflx","ocean","all",.true.,"none",2
+
+#"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
+#"ocean_model","tx_trans","tx_trans",        "ocean","all",.true.,"none",2
+#"ocean_model","ty_trans","ty_trans",        "ocean","all",.true.,"none",2 
+
+"ocean_model","visc_cbu","visc_cbu",          "ocean","all",.true.,"none",2
 
 #==========================================================================
 # Needed for Heat Budget Analysis
 #==========================================================================
 
-# Monthly averages of normal fields
-"ocean_model","temp","temp",            "ocean","all",.true.,"none",2
+# Monthly averages of layer thickness:
 "ocean_model","dzt","dzt",            "ocean","all",.true.,"none",2
-"ocean_model","diff_cbt_t","diff_cbt_t",          "ocean","all",.true.,"none",2
-"ocean_model","pme_river","pme_river",            "ocean","all",.true.,"none",2
-"ocean_model","net_sfc_heating","net_sfc_heating"     ,"ocean","all",.true.,"none",2
-"ocean_model","swflx","swflx","ocean","all",.true.,"none",2
 
 # # Monthly snapshots
 # "ocean_model","geolon_t","geolon_t", "ocean_snap","all",.false.,"none",2
@@ -92,8 +98,8 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",2
 # "ocean_model","tx_trans_nrho_gm","tx_trans_nrho_gm", "ocean_wmass","all",.true.,"none",2
 # "ocean_model","ty_trans_nrho_gm","ty_trans_nrho_gm", "ocean_wmass","all",.true.,"none",2
-"ocean_model","tx_trans_nrho_submeso","tx_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",2
-"ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","tx_trans_nrho_submeso","tx_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","ty_trans_nrho_submeso","ty_trans_nrho_submeso", "ocean_wmass","all",.true.,"none",2
 
 # # To close volume budget, also need P-E+R T-binned:
 # "ocean_model","mass_pmepr_on_nrho","mass_pmepr_on_nrho","ocean_wmass","all",.true.,"none",2
@@ -121,15 +127,6 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 # "ocean_model","neutral_diffusion_temp","neutral_diffusion_temp", "ocean_heat","all",.true.,"none",2
 # "ocean_model","neutral_gm_temp","neutral_gm_temp", "ocean_heat","all",.true.,"none",2
 # "ocean_model","temp_vdiffuse_k33","temp_vdiffuse_k33", "ocean_heat","all",.true.,"none",2
-
-#==========================================================================
-# Extras that Nicola had:
-#==========================================================================
- # "ocean_model","sea_level_sq","sea_levelsq",      "ocean","all",.true.,"none",2
- # "ocean_model","pot_rho_0","pot_rho_0",              "ocean","all",.true.,"none",2
- # "ocean_model","sfc_hflux_coupler","sfc_hflux_coupler" ,"ocean","all",.true.,"none",2
- # "ocean_model","sfc_salt_flux_restore","sfc_salt_flux_restore" ,"ocean","all",.true.,"none",2  
- "ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
 
 #==========================================================================
 # Globally-averaged 
