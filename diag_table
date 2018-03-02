@@ -3,7 +3,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #output files
 #"ice_daily",       24,  "hours",  1, "days", "time",
 "ice_month",        1,  "months", 1, "days", "time",
-"ocean",           1,  "months", 1, "days", "time",
+"ocean",           12,  "months", 1, "days", "time",
 "ocean_heat",      1,  "months", 1, "days", "time",
 "ocean_snap",      1,  "months", 1, "days", "time",
 "ocean_wmass",     1,  "months", 1, "days", "time",
@@ -35,24 +35,24 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","salt","salt",            "ocean","all",.true.,"none",2
 "ocean_model","u","u",                  "ocean","all",.true.,"none",2
 "ocean_model","v","v",                  "ocean","all",.true.,"none",2
-"ocean_model","wt","wt",                            "ocean","all",.true.,"none",2
-"ocean_model","diff_cbt_t","diff_cbt_t",          "ocean","all",.true.,"none",2
+# "ocean_model","wt","wt",                            "ocean","all",.true.,"none",2
+# "ocean_model","diff_cbt_t","diff_cbt_t",          "ocean","all",.true.,"none",2
 "ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
 
 "ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
-"ocean_model","sea_level_sq","sea_levelsq",      "ocean","all",.true.,"none",2
+#"ocean_model","sea_level_sq","sea_levelsq",      "ocean","all",.true.,"none",2
 "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 "ocean_model","tau_x","tau_x"                         ,"ocean","all",.true.,"none",2
 "ocean_model","tau_y","tau_y"                         ,"ocean","all",.true.,"none",2
 "ocean_model","pme_river","pme_river",            "ocean","all",.true.,"none",2
 "ocean_model","net_sfc_heating","net_sfc_heating"     ,"ocean","all",.true.,"none",2
-"ocean_model","swflx","swflx","ocean","all",.true.,"none",2
+#"ocean_model","swflx","swflx","ocean","all",.true.,"none",2
 
 #"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
 #"ocean_model","tx_trans","tx_trans",        "ocean","all",.true.,"none",2
 #"ocean_model","ty_trans","ty_trans",        "ocean","all",.true.,"none",2 
 
-"ocean_model","visc_cbu","visc_cbu",          "ocean","all",.true.,"none",2
+#"ocean_model","visc_cbu","visc_cbu",          "ocean","all",.true.,"none",2
 
 #==========================================================================
 # Needed for Heat Budget Analysis
@@ -94,7 +94,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 # # "ocean_model","temp_vdiffuse_k33_on_nrho","temp_vdiffuse_k33_on_nrho", "ocean_wmass","all",.true.,"none",2
 
 # Temperature-binned transports
-"ocean_model","tx_trans_nrho","tx_trans_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","tx_trans_nrho","tx_trans_nrho", "ocean_wmass","all",.true.,"none",2
 "ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",2
 # "ocean_model","tx_trans_nrho_gm","tx_trans_nrho_gm", "ocean_wmass","all",.true.,"none",2
 # "ocean_model","ty_trans_nrho_gm","ty_trans_nrho_gm", "ocean_wmass","all",.true.,"none",2
