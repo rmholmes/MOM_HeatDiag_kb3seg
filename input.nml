@@ -622,7 +622,7 @@
  &ocean_vert_mix_nml
 	aidif=1.0
 	vert_mix_scheme='kpp_mom4p1'
-	vert_diff_back_via_max =.false.
+	vert_diff_back_via_max =.true.
 	use_diff_cbt_table=.false.
 	bryan_lewis_diffusivity=.false.
 	bryan_lewis_lat_depend=.false.
