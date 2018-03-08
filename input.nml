@@ -612,7 +612,7 @@
 
  &ocean_vert_kpp_mom4p1_nml
 	use_this_module=.true.
-	diff_cbt_iw=1.0e-5
+	diff_cbt_iw=0.0
 	visc_cbu_iw=0.0
 	double_diffusion=.true.
 	Ricr=0.3
