@@ -612,8 +612,12 @@
 
  &ocean_vert_kpp_mom4p1_nml
 	use_this_module=.true.
-	diff_cbt_iw=0.0
+	diff_cbt_iw=1.0e-5
 	visc_cbu_iw=0.0
+        eqred_iw = .true.
+        diff_cbt_iw_eq = 1.0e-6
+        eqred_minlat = 5.0
+        eqred_maxlat = 15.0
 	double_diffusion=.true.
 	Ricr=0.3
 	smooth_blmc=.true.
@@ -627,11 +631,6 @@
 	bryan_lewis_diffusivity=.false.
 	bryan_lewis_lat_depend=.false.
 	hwf_diffusivity     = .true.
-        hwf_diffusivity_3seg = .true.
-        hwf_3seg_polediffusivity = 1.0e-5
-        hwf_3seg_eqdiffusivity = 1.0e-6
-        hwf_3seg_maxlat = 15.0
-        hwf_3seg_minlat = 5.0
 	hwf_min_diffusivity = 2.e-6
 	hwf_N0_2Omega       = 20.0
 /
