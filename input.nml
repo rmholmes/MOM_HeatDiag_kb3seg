@@ -612,10 +612,10 @@
 
  &ocean_vert_kpp_mom4p1_nml
 	use_this_module=.true.
-	diff_cbt_iw=1.0e-5
+	diff_cbt_iw=1.0e-6
 	visc_cbu_iw=0.0
         eqred_iw = .true.
-        diff_cbt_iw_eq = 1.0e-5
+        diff_cbt_iw_eq = 1.0e-6
         eqred_minlat = 5.0
         eqred_maxlat = 15.0
 	double_diffusion=.true.
