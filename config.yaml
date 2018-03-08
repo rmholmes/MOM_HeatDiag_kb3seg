@@ -18,9 +18,8 @@ collate_exe: /short/v45/aph502/mom/bin/mppnccombine
 # Model config
 model: mom
 shortpath: /short/e14
-#exe: fms_MOM_SIS_kb3segKPP.x
+exe: fms_MOM_SIS_kb3segKPP.x
 input:
-     - /short/e14/rmh561/MOM_HeatDiag_kb1em5/archive/restart013/
      - mom025/mask_1920
      - gfdl_nyf_1080_clean
 collate: true

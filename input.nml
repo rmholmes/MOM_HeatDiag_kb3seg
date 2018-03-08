@@ -612,8 +612,12 @@
 
  &ocean_vert_kpp_mom4p1_nml
 	use_this_module=.true.
-	diff_cbt_iw=0.0
+	diff_cbt_iw=1.0e-5
 	visc_cbu_iw=0.0
+        eqred_iw = .true.
+        diff_cbt_iw_eq = 1.0e-6
+        eqred_maxlat = 15.0
+        eqred_minlat = 5.0
 	double_diffusion=.true.
 	Ricr=0.3
 	smooth_blmc=.true.
@@ -622,11 +626,11 @@
  &ocean_vert_mix_nml
 	aidif=1.0
 	vert_mix_scheme='kpp_mom4p1'
-	vert_diff_back_via_max =.false.
+	vert_diff_back_via_max =.true.
 	use_diff_cbt_table=.false.
 	bryan_lewis_diffusivity=.false.
 	bryan_lewis_lat_depend=.false.
-	hwf_diffusivity     = .true.
+	hwf_diffusivity     = .false.
 	hwf_min_diffusivity = 2.e-6
 	hwf_N0_2Omega       = 20.0
 /
