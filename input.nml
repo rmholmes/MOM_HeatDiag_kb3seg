@@ -615,7 +615,7 @@
 	diff_cbt_iw=1.0e-5
 	visc_cbu_iw=0.0
         eqred_iw = .true.
-        diff_cbt_iw_eq = 1.0e-6
+        diff_cbt_iw_eq = 1.0e-5
         eqred_minlat = 5.0
         eqred_maxlat = 15.0
 	double_diffusion=.true.
