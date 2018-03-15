@@ -9,7 +9,7 @@ jobname: NYFh3seg
 #collate_walltime: 10:00:00
 #collate_mem: 16GB
 collate_walltime: 06:00:00
-collate_mem: 12GB
+collate_mem: 16GB
 collate_ncpus: 2
 collate_queue: express
 collate_flags: -n4 -z -m -r
@@ -18,12 +18,12 @@ collate_exe: /short/v45/aph502/mom/bin/mppnccombine
 # Model config
 model: mom
 shortpath: /short/e14
-exe: fms_MOM_SIS_kb3segKPP.x
+exe: fms_MOM_SIS.x
 input:
      - mom025/mask_1920
      - gfdl_nyf_1080_clean
 collate: true
-restart_freq: 5
+restart_freq: 1
 
 # Misc
 stacksize: unlimited
