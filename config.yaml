@@ -1,5 +1,5 @@
 # PBS flags
-queue: express
+queue: normal
 project: e14
 walltime: 05:00:00
 ncpus: 1477
@@ -18,7 +18,7 @@ collate_exe: /short/v45/aph502/mom/bin/mppnccombine
 # Model config
 model: mom
 shortpath: /short/e14
-exe: fms_MOM_SIS_kppblBUG.x
+exe: fms_MOM_SIS_subgm.x
 input:
      - mom025/mask_1920
      - gfdl_nyf_1080_clean
