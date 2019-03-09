@@ -39,6 +39,10 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","diff_cbt_t","diff_cbt_t",          "ocean","all",.true.,"none",2
 "ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
 
+"ocean_model","u_sq","u_sq",                  "ocean","all",.true.,"none",2
+"ocean_model","v_sq","v_sq",                  "ocean","all",.true.,"none",2
+"ocean_model","wt_sq","wt_sq",                "ocean","all",.true.,"none",2
+
 "ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
 "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 "ocean_model","tau_x","tau_x"                         ,"ocean","all",.true.,"none",2
@@ -81,13 +85,13 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","sw_heat_on_nrho","sw_heat_on_nrho", "ocean_wmass","all",.true.,"none",2
 "ocean_model","temp_rivermix_on_nrho","temp_rivermix_on_nrho","ocean_wmass","all",.true.,"none",2
 
-# Components of diffusion:
-"ocean_model","temp_vdiffuse_diff_cbt_kppiw_on_nrho","temp_vdiffuse_diff_cbt_kppiw_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","temp_vdiffuse_diff_cbt_kppish_on_nrho","temp_vdiffuse_diff_cbt_kppish_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","temp_vdiffuse_diff_cbt_kppicon_on_nrho","temp_vdiffuse_diff_cbt_kppicon_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","temp_vdiffuse_diff_cbt_kppbl_on_nrho","temp_vdiffuse_diff_cbt_kppbl_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","temp_vdiffuse_diff_cbt_kppdd_on_nrho","temp_vdiffuse_diff_cbt_kppdd_on_nrho", "ocean_wmass","all",.true.,"none",2
-"ocean_model","temp_vdiffuse_diff_cbt_wave_on_nrho","temp_vdiffuse_diff_cbt_wave_on_nrho", "ocean_wmass","all",.true.,"none",2
+# # Components of diffusion:
+# "ocean_model","temp_vdiffuse_diff_cbt_kppiw_on_nrho","temp_vdiffuse_diff_cbt_kppiw_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","temp_vdiffuse_diff_cbt_kppish_on_nrho","temp_vdiffuse_diff_cbt_kppish_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","temp_vdiffuse_diff_cbt_kppicon_on_nrho","temp_vdiffuse_diff_cbt_kppicon_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","temp_vdiffuse_diff_cbt_kppbl_on_nrho","temp_vdiffuse_diff_cbt_kppbl_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","temp_vdiffuse_diff_cbt_kppdd_on_nrho","temp_vdiffuse_diff_cbt_kppdd_on_nrho", "ocean_wmass","all",.true.,"none",2
+# "ocean_model","temp_vdiffuse_diff_cbt_wave_on_nrho","temp_vdiffuse_diff_cbt_wave_on_nrho", "ocean_wmass","all",.true.,"none",2
 
 # Neutral diffusion:
 # "ocean_model","neutral_diffusion_on_nrho_temp","neutral_diffusion_on_nrho_temp", "ocean_wmass","all",.true.,"none",2
