@@ -7,6 +7,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_heat",      1,  "months", 1, "days", "time",
 "ocean_snap",      1,  "months", 1, "days", "time",
 "ocean_wmass",     1,  "months", 1, "days", "time",
+"ocean_tvvar",     1,  "months", 1, "days", "time",
 #"ocean_daily",     24,  "hours",  1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
@@ -39,10 +40,6 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","diff_cbt_t","diff_cbt_t",          "ocean","all",.true.,"none",2
 "ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
 
-"ocean_model","u_sq","u_sq",                  "ocean","all",.true.,"none",2
-"ocean_model","v_sq","v_sq",                  "ocean","all",.true.,"none",2
-"ocean_model","wt_sq","wt_sq",                "ocean","all",.true.,"none",2
-
 "ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
 "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 "ocean_model","tau_x","tau_x"                         ,"ocean","all",.true.,"none",2
@@ -50,6 +47,28 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","pme_river","pme_river",            "ocean","all",.true.,"none",2
 "ocean_model","net_sfc_heating","net_sfc_heating"     ,"ocean","all",.true.,"none",2
 "ocean_model","swflx","swflx","ocean","all",.true.,"none",2
+
+#==========================================================================
+# Temperature and velocity variability diagnostics
+#==========================================================================
+
+"ocean_model","geolon_t","geolon_t", "ocean_tvvar","all",.false.,"none",2
+"ocean_model","geolat_t","geolat_t", "ocean_tvvar","all",.false.,"none",2
+"ocean_model","geolon_c","geolon_c", "ocean_tvvar","all",.false.,"none",2
+"ocean_model","geolat_c","geolat_c", "ocean_tvvar","all",.false.,"none",2
+
+# T and velocity variability diagnostics
+"ocean_model","u_on_nrho","u_on_nrho",         "ocean_tvvar","all",.true.,"none",2
+"ocean_model","v_on_nrho","v_on_nrho",         "ocean_tvvar","all",.true.,"none",2
+"ocean_model","wt_on_nrho","wt_on_nrho",       "ocean_tvvar","all",.true.,"none",2
+
+"ocean_model","u_sq_on_nrho","u_sq_on_nrho",         "ocean_tvvar","all",.true.,"none",2
+"ocean_model","v_sq_on_nrho","v_sq_on_nrho",         "ocean_tvvar","all",.true.,"none",2
+"ocean_model","wt_sq_on_nrho","wt_sq_on_nrho",       "ocean_tvvar","all",.true.,"none",2
+
+"ocean_model","temp_dx_on_nrho","temp_dx_on_nrho",   "ocean_tvvar","all",.true.,"none",2
+"ocean_model","temp_dy_on_nrho","temp_dy_on_nrho",   "ocean_tvvar","all",.true.,"none",2
+"ocean_model","temp_dz_on_nrho","temp_dz_on_nrho",   "ocean_tvvar","all",.true.,"none",2
 
 #==========================================================================
 # Needed for Heat Budget Analysis
