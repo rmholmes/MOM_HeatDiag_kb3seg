@@ -16,6 +16,11 @@
         check_stocks=0
 /
 
+ &mpp_io_nml
+        deflate_level = 5
+        shuffle = 1
+/
+        
  &data_override_nml
 
 /
@@ -73,8 +78,8 @@
        mom_rough_ice=5.0e-4
        wd_turn=0.0
        do_icebergs = .false.
-       layout = 64, 30
-       io_layout = 64, 30
+       layout = 60, 36
+       io_layout = 10, 6
 /
 
  &icebergs_nml
@@ -269,8 +274,8 @@
 	surface_height_split = 1
 	barotropic_split = 80
 	debug=.false.
-	layout = 64, 30
-	io_layout = 64, 30
+        layout = 60, 36
+        io_layout = 10, 6
 /
 
  &ocean_momentum_source_nml
