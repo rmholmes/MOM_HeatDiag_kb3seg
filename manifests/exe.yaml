@@ -1,0 +1,8 @@
+format: yamanifest
+version: 1.0
+---
+work/fms_MOM_SIS_tvvar.x:
+  fullpath: /short/e14/rmh561/mom/bin/fms_MOM_SIS_tvvar.x
+  hashes:
+    binhash: a3a7fe0da46f03f552d1c5967396f1b9
+    md5: e9f8c1ceb42b6a3e2e19d1292e031bdf
