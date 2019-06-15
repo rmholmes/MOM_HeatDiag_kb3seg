@@ -26,7 +26,7 @@ collate:
      ncpus: 4
      threads: 2
      flags: -r -v
-     exe: /short/public/aph502/mppnccombine-fast
+     exe: /short/public/aph502/mppnccombine
      restart: true
 
 # Misc
