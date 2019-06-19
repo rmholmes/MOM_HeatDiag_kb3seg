@@ -1,6 +1,6 @@
 # PBS flags
 queue: normal
-project: e14
+project: v45
 walltime: 05:00:00
 ncpus: 1477
 mem: 2900GB
@@ -21,7 +21,7 @@ collate:
      enable: true
      queue: express
      memory: 4GB
-     walltime: 05:00:00
+     walltime: 24:00:00
      mpi: true
      ncpus: 4
      threads: 2
