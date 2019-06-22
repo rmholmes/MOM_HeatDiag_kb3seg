@@ -3,10 +3,10 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #output files
 #"ice_daily",       24,  "hours",  1, "days", "time",
 "ice_month",        1,  "months", 1, "days", "time",
-"ocean",           1,  "months", 1, "days", "time",
-"ocean_heat",      1,  "months", 1, "days", "time",
-"ocean_snap",      1,  "months", 1, "days", "time",
-"ocean_wmass",     1,  "months", 1, "days", "time",
+"ocean",           12,  "months", 1, "days", "time",
+"ocean_heat",      12,  "months", 1, "days", "time",
+"ocean_snap",      12,  "months", 1, "days", "time",
+"ocean_wmass",     12,  "months", 1, "days", "time",
 #"ocean_daily",     24,  "hours",  1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
@@ -40,11 +40,11 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 
 "ocean_model","u_sq","u_sq",                  "ocean","all",.true.,"none",2
 "ocean_model","v_sq","v_sq",                  "ocean","all",.true.,"none",2
-"ocean_model","wt_sq","wt_sq",                            "ocean","all",.true.,"none",2
+#"ocean_model","wt_sq","wt_sq",                            "ocean","all",.true.,"none",2
 
-"ocean_model","temp_dxsq","temp_dxsq",                  "ocean","all",.true.,"none",2
-"ocean_model","temp_dysq","temp_dysq",                  "ocean","all",.true.,"none",2
-"ocean_model","temp_dzsq","temp_dzsq",                  "ocean","all",.true.,"none",2
+#"ocean_model","temp_dxsq","temp_dxsq",                  "ocean","all",.true.,"none",2
+#"ocean_model","temp_dysq","temp_dysq",                  "ocean","all",.true.,"none",2
+#"ocean_model","temp_dzsq","temp_dzsq",                  "ocean","all",.true.,"none",2
 
 "ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
 "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
