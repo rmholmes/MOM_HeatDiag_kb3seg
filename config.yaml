@@ -9,7 +9,7 @@ jobname: NYFh3seg
 # Model config
 model: mom
 shortpath: /short/e14
-exe: fms_MOM_SIS_tvvar.x
+exe: fms_MOM_SIS_diff_cbt_on_nrho.x
 input:
      - mom025/mask_1920
      - gfdl_nyf_1080_clean
