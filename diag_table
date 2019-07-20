@@ -39,6 +39,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","diff_cbt_t","diff_cbt_t",          "ocean","all",.true.,"none",2
 
 "ocean_model","diff_cbt_t_on_nrho","diff_cbt_t_on_nrho",   "ocean","all",.true.,"none",2
+"ocean_model","mass_t_on_nrho","mass_t_on_nrho",   "ocean","all",.true.,"none",2
 
 "ocean_model","u_sq","u_sq",                  "ocean","all",.true.,"none",2
 "ocean_model","v_sq","v_sq",                  "ocean","all",.true.,"none",2
