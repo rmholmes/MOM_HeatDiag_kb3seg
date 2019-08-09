@@ -1,7 +1,7 @@
 # PBS flags
-queue: normal
+queue: express
 project: e14
-walltime: 05:00:00
+walltime: 00:30:00
 ncpus: 1477
 mem: 2900GB
 jobname: NYFh3seg
