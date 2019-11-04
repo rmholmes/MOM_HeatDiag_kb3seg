@@ -425,7 +425,7 @@
       zero_heat_fluxes=.false.
       zero_surface_stress=.false.
       runoff_salinity=0.0
-      max_delta_salinity_restore=0.5
+      max_delta_salinity_restore=100.0
       do_flux_correction = .false.
       salt_correction_scale = 0.0
       zero_net_salt_correction=.false.
