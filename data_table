@@ -1,7 +1,7 @@
 "ATM" , "p_surf"        , "SLP"         , "./INPUT/slp.nc"                     , "bicubic" ,  1.0
 "ATM" , "p_bot"         , "SLP"         , "./INPUT/slp.nc"                     , "bicubic" ,  1.0
-"ATM" , "t_bot"         , "T_10_MOD"    , "./INPUT/t_10.nc"	, "bicubic" ,  1.0
-"ATM" , "sphum_bot"     , "Q_10_MOD"    , "./INPUT/q_10.nc"	, "bicubic" ,  1.0
+"ATM" , "t_bot"         , "T_10_MOD"    , "./INPUT/t_10_AMOCOFF.nc"	, "bicubic" ,  1.0
+"ATM" , "sphum_bot"     , "Q_10_MOD"    , "./INPUT/q_10_AMOCOFF.nc"	, "bicubic" ,  1.0
 "ATM" , "u_bot"         , "U_10_MOD"    , "./INPUT/u_10.nc"	, "bicubic" ,  1.0
 "ATM" , "v_bot"         , "V_10_MOD"    , "./INPUT/v_10.nc"	, "bicubic" ,  1.0
 "ATM" , "z_bot"         , ""            , ""                             , "bicubic" , 10.0
