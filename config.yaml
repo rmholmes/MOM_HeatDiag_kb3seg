@@ -1,15 +1,15 @@
 # PBS flags
-queue: express
+queue: normal
 project: e14
-walltime: 01:00:00
+walltime: 03:00:00
 ncpus: 1477
 mem: 2900GB
 jobname: NYFh3seg
 
 # Model config
 model: mom
-shortpath: /short/e14
-exe: fms_MOM_SIS_diff_cbt_on_nrho.x
+shortpath: /scratch/e14
+exe: fms_MOM_SIS_9d7cfcf4_gadi.x
 input:
      - mom025/mask_1920
      - gfdl_nyf_1080_clean
@@ -29,15 +29,20 @@ restart_freq: 1
 #      exe: /short/public/aph502/mppnccombine-fast
 #      restart: true
 
-collate_walltime: 12:00:00
-collate_ncpus: 2
-collate_mem: 24GB
-collate_queue: express
-collate_flags: -n4 -z -m -r
-collate_exe: /short/v45/aph502/mom/bin/mppnccombine
-
+collate:
+  walltime: 1:00:00
+  mem: 30GB
+  ncpus: 4
+  queue: express
+  exe: /g/data4/ik11/inputs/access-om2/bin/mppnccombine
 
 # Misc
+# Misc
+runlog: true
 stacksize: unlimited
-mpirun: --mca mtl mxm
-qsub_flags: -lother=hyperthread -W umask=027
+mpirun: --mca orte_base_help_aggregate 0
+qsub_flags: -lother=hyperthread -W umask=027 -l storage=gdata/hh5+gdata/ik11+scratch/e14+gdata/ua8
+# set number of cores per node (28 for normalbw, 48 for normal on gadi)
+platform:
+    nodesize: 48
+    
