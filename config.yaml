@@ -1,5 +1,5 @@
 # PBS flags
-queue: normal
+queue: express
 project: e14
 walltime: 03:00:00
 ncpus: 1477
@@ -46,6 +46,7 @@ storage:
       gdata:
           - ua8
           - ik11
+          - e14
 
 # set number of cores per node (28 for normalbw, 48 for normal on gadi)
 platform:

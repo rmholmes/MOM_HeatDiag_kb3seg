@@ -205,8 +205,8 @@
 	neutralrho_min=-3.0
 	neutralrho_max=34.0
 	layer_nk=74
-	eos_linear=.false.
-	eos_preteos10=.true.
+	eos_linear=.true.
+	eos_preteos10=.false.
 /
 
  &ocean_domains_nml
