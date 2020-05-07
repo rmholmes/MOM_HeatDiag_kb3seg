@@ -34,14 +34,19 @@ collate:
   mem: 30GB
   ncpus: 4
   queue: express
-  exe: /g/data4/ik11/inputs/access-om2/bin/mppnccombine
+  exe: /g/data/ik11/inputs/access-om2/bin/mppnccombine
 
 # Misc
 # Misc
 runlog: true
 stacksize: unlimited
 mpirun: --mca orte_base_help_aggregate 0
-qsub_flags: -lother=hyperthread -W umask=027 -l storage=gdata/hh5+gdata/ik11+scratch/e14+gdata/ua8
+qsub_flags: -lother=hyperthread -W umask=027
+storage:
+      gdata:
+          - ua8
+          - ik11
+
 # set number of cores per node (28 for normalbw, 48 for normal on gadi)
 platform:
     nodesize: 48
