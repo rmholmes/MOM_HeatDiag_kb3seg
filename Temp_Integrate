@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -N TintMOM
+#PBS -P e14
+#PBS -l ncpus=1
+#PBS -l mem=12GB
+#PBS -l walltime=12:00:00
+#PBS -l wd
+#PBS -q express
+#PBS -M ryan.holmes@unsw.edu.au
+#PBS -m e
+
+cd /short/e14/rmh561/mom/archive/MOM_HeatDiag_kb3seg/output096/
+ncap2 -v -S ~/Tvars_025degMOM ocean_wmass.nc ocean_wmass_integrated.nc
+
+
